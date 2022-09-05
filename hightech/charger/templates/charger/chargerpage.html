@@ -3,11 +3,11 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-    {% for item in phone %}
+    {% for item in charger %}
         <p>{{item.model}}</p>
         <img src="{{ item.photo.url }}" alt="" width="300">
         <p>{{item.content}}</p>
-        <p>{{item.company}}</p>   
-        <p>${{item.price}}</p>     
+        <p>{{item.company}}</p> 
+        <p>${{item.price}}</p>       
     {% endfor %}
 {% endblock %}

@@ -7,6 +7,9 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+
+    <a href="{% url 'phone' %}">Phones</a> | <a href="{% url 'charger' %}">Chargers</a> | <a href="{% url 'case' %}">Cases</a>
+    
     {% block content %}
 
     {% endblock %}

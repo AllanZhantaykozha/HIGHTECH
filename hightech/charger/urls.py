@@ -3,5 +3,5 @@ from .views import *
 
 
 urlpatterns = [
-    path('', PhonePage.as_view(), name='phone')
+    path('', ChargerPage.as_view(), name='charger')
 ]

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ detailcase.model }}{% endblock %}
+
+{% block content %}
+
+    <a href="{{ item.get_absolute_url }}"></a><p>{{detailphone.model}}</p>
+    <img src="{{ detailcase.photo.url }}" alt="" width="300">
+    <p>{{detailcase.content}}</p>
+    <p>{{detailcase.company}}</p>    
+    <p>{{detailcase.phone_model}}</p>   
+    <p>${{detailcase.price}}</p>     
+
+{% endblock %}

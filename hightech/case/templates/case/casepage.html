@@ -4,7 +4,7 @@
 
 {% block content %}
     {% for item in case %}
-        <p>{{item.model}}</p>
+        <a href="{{ item.get_absolute_url }}"><p>{{item.model}}</p></a>
         <img src="{{ item.photo.url }}" alt="" width="300">
         <p>{{item.content}}</p>
         <p>{{item.phone_model}}</p>       

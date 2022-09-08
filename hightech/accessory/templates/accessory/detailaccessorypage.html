@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ detailaccessory.model }}{% endblock %}
+
+{% block content %}
+
+    <p>{{detailaccessory.model}}</p>
+    <img src="{{ detailaccessory.photo.url }}" alt="" width="300">
+    <p>{{detailaccessory.content}}</p>
+    <p>{{detailaccessory.company}}</p>     
+    <p>${{detailaccessory.price}}</p>     
+
+{% endblock %}

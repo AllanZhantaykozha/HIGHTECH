@@ -24,6 +24,8 @@ urlpatterns = [
     path('', include('phone.urls')),
     path('chargers/', include('charger.urls')),
     path('cases/', include('case.urls')),
+    path('accessories/', include('accessory.urls')),
+    path('account/', include('account.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

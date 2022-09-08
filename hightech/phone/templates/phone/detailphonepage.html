@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ detailphone.model }}{% endblock %}
+
+{% block content %}
+
+    <p>{{detailphone.model}}</p>
+    <img src="{{ detailphone.photo.url }}" alt="" width="300">
+    <p>{{detailphone.content}}</p>
+    <p>{{detailphone.company}}</p>
+    <p>{{detailphone.back_camera}}</p>  
+    <p>{{detailphone.front_camera}}</p>     
+    <p>{{detailphone.cpu}}</p>  
+    <p>{{detailphone.ram}}</p>  
+    <p>{{detailphone.memory}}</p>  
+    <p>{{detailphone.battery}}</p>  
+    <p>${{detailphone.price}}</p>     
+
+{% endblock %}

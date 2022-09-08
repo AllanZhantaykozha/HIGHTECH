@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'phone',
     'charger',
     'case',
+    'accessory',
+    'account',
 ]
 
 MIDDLEWARE = [

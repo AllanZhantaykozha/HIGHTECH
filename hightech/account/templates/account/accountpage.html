@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+    <p>{{ request.user }}</p>
+    <p>{{ request.user.email }}</p>  
+    {% for item in request.user.company_phone.all %} 
+    <p>{{ item }}</p>
+    <p>{{ item.content }}</p>
+    <p>{{ item.company }}</p>
+    <img src="{{ item.photo.url }}" alt="" width="300">
+    <p>{{ item.price }}</p>
+    {% endfor %}
+
+{% endblock %}

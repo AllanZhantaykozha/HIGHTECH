@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ detailcharger.model }}{% endblock %}
+
+{% block content %}
+    <p>{{detailcharger.model}}</p>
+    <img src="{{ detailcharger.photo.url }}" alt="" width="300">
+    <p>{{detailcharger.content}}</p>
+    <p>{{detailcharger.company}}</p> 
+    <p>{{detailcharger.power}}</p>
+    <p>{{detailcharger.type}}</p>
+    <p>${{detailcharger.price}}</p>       
+{% endblock %}
